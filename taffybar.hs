@@ -43,6 +43,6 @@ main = do
       wifi = netMonitorNew 0.5 "wlp3s0"
   defaultTaffybar defaultTaffybarConfig
     { barHeight = 20
-    , startWidgets = [ pager, note ]
-    , endWidgets = [ tray, wifi, batt, clock, mem, cpu ]
+    , startWidgets = [ pager, note, tray ]
+    , endWidgets = [ batt, clock, mem, cpu, wifi ]
     }
