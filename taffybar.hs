@@ -76,7 +76,7 @@ main = do
         { startWidgets =
             workspaces : Prelude.map (>>= buildContentsBox) [ layout, windows ]
         , endWidgets = Prelude.map (>>= buildContentsBox)
-          [ textBatteryNew "$status$ $percentage$% ($time$)"
+          [ batteryIconNew -- textBatteryNew "$status$ $percentage$% ($time$)"
           , clock
           , tray
           , cpu
